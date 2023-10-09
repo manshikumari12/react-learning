@@ -7,6 +7,7 @@ import React from "react";
 
 import TodoItem from "./Components/TodoItem";
 import AddTodo from "./Components/AddTodo";
+import Counter from "./Components/Counter";
 
 
 
@@ -27,7 +28,9 @@ function App() {
   console.log(todo);
 
   return (
+    
     <div className="App">
+  
     <AddTodo handleAdd={handleAdd}/>
 
 
@@ -43,6 +46,7 @@ function App() {
 
         ))}
       </div>
+      <Counter/>
     </div>
   );
 }

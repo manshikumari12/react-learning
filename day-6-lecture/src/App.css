@@ -36,9 +36,3 @@
     transform: rotate(360deg);
   }
 }
-/* .cardcomp {
-  display: grid;
-  gridTemplateColumns:repeat(3, 1fr); 
-  gap: 10px;
-  margin: 20px;
-} */

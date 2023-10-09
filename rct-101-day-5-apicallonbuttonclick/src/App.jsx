@@ -1,16 +1,14 @@
 
 import './App.css';
 import React from 'react';
+import PostItem from './Component/PostItem';
+import getData from './utilite/getdata';
+
 
 function App() {
   const [data,setData ]=React.useState([]);
 
-  const getData = () =>{
-    return fetch(`https://jsonplaceholder.typicode.com/posts?_limit=10`)
-       .then((res)=>
-       res.json()
-       )
-  }
+  
 
   const fetchAndUpdateData = async() =>{
     // console.log('get data');
@@ -26,15 +24,15 @@ function App() {
   return (
     <div className="App">
       <h1>Posts</h1>
-      <button onClick={fetchAndUpdateData}>GET POST</button>
-      <ul>
+      <button onClick={fetchAndUpdateData}>GET POST</button >
+      <div style={{display:'grid',gridTemplateColumns:"repeat(3,1fr)" ,gap:"10px", margin:"20px"}}>
         {
           data.map((post)=>(
-            <li key={post.id}>{post.title} </li>
+          <PostItem key={post.id}{...post}/>
             // <li >{post.userId}</li>
           ))
         }
-      </ul>
+      </div>
       
     </div>
   );
