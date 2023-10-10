@@ -4,18 +4,14 @@ import Counter from './Counter';
 
 
 const CardItem = ({ title, price, image, description, category }) => {
-  return  <div  style={{ display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  border: "1px solid #ccc",
-  padding: "30px",
-  flexDirection: "column",
-  borderRadius:"4%"}}>
-      <h1>{title}</h1>
+  return  <div className='cardlist'  >
+  
       <img className='poster' src={image} alt={category}/>
-      <p>{description}</p>
-      <p>{price}</p>
+      <h1 className='cardtitle' >{title}</h1>
+      {/* <p>{description}</p> */}
       <p>{category}</p>
+      <p className='cardprice'>Rs : {price}</p>
+     
       <Counter/>
      
     </div>

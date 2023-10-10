@@ -1,14 +1,17 @@
 // Import necessary dependencies and components
 import './App.css';
 import Api from './Component/Api';
-import Header from './Headers/top'; // Updated import with proper naming convention
+import Footer from './Component/Footer';
 
+import Header from './Headers/top'; 
 
 function App() {
   return (
     <div className="App">
       <Header /> {/* Include the Header component */}
       <Api />
+
+<Footer/>
     </div>
   );
 }

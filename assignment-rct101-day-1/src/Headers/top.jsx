@@ -1,18 +1,30 @@
 import React from 'react'
 import "../Css/navbar.css"
-import Form from './Signup'
+
+import Fashionable from '../Asset/Fashionable'
+import SearchBox from '../Asset/search'
 
 
 
 
 const header = () => {
   return (
-    <div className='navbar'>
-  <Form/>
-   logo
+<div className="navbar">
+  <div className="childdiv">
+    
+      <Fashionable/>
+      <div>
+    
+     <SearchBox/>
+      </div>
+     
+      <button>Signup</button>
+      <button>Login</button>
+      <button>Cart</button>
 
-      
-    </div>
+   
+  </div>
+</div>
   )
 }
 
