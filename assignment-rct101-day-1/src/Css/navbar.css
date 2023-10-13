@@ -18,6 +18,7 @@
 #logobrand{
     font-style: oblique;
     /* border: 2px solid red; */
+    color: rgba(0, 0, 0, 0.816);
     cursor: pointer;
 }
 
@@ -33,12 +34,21 @@
 
   
 input{
-    border: 2px solid rgb(11, 11, 11);
+    border: 2px solid rgba(0, 0, 0, 0.816);
     width: 620px;
     margin-right: 40px;
     padding: 10px;
     border-radius: 3px;
+    
 
+}
+.btn{
+  background-color: crimson;
+  border: none;
+  width: 75px;
+  height: 35px;
+  color: white;
+  border-radius: 3px;
 }
 
 
